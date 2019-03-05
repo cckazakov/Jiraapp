@@ -1,0 +1,37 @@
+{
+  "key": "my-addon-unique-key",
+  "name": "My addon name",
+  "description": "Tester",
+  "vendor": {
+    "name": "My name",
+    "url": "www.example.com"
+  },
+  "baseUrl": "https://d703ea42.ngrok.io",
+  "links": {
+    "config": "https://d703ea42.ngrok.io/atlassian-connect.json"
+  },
+  "authentication": {
+    "type": "none"
+  },
+  "scopes": [
+    "READ",
+    "WRITE"
+  ],
+  "modules": {
+    "generalPages": [
+      {
+        "key": "my-addon-page-name",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "tester"
+        },
+        "url": "/index",
+        "conditions": [
+          {
+            "condition": "user_is_logged_in"
+          }
+        ]
+      }
+    ]
+  }
+}
