@@ -1,0 +1,37 @@
+{
+  "key": "my-addon-unique-key",
+  "name": "Testinger",
+  "description": "To test React/Redux app",
+  "vendor": {
+    "name": "testinger dev",
+    "url": "www.example.com"
+  },
+  "baseUrl": "https://example.com/",
+  "links": {
+    "config": "https://example.com//atlassian-connect.json"
+  },
+  "authentication": {
+    "type": "none"
+  },
+  "scopes": [
+    "READ",
+    "WRITE"
+  ],
+  "modules": {
+    "generalPages": [
+      {
+        "key": "my-addon-page-name",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "My addon"
+        },
+        "url": "/index",
+        "conditions": [
+          {
+            "condition": "user_is_logged_in"
+          }
+        ]
+      }
+    ]
+  }
+}

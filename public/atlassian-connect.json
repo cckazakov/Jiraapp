@@ -1,14 +1,13 @@
 {
   "key": "my-addon-unique-key",
-  "name": "My addon name",
-  "description": "Tester",
+  "name": "Testinger",
+  "description": "To test React/Redux app",
   "vendor": {
-    "name": "My name",
+    "name": "testinger dev",
     "url": "www.example.com"
   },
-  "baseUrl": "https://d703ea42.ngrok.io",
   "links": {
-    "config": "https://d703ea42.ngrok.io/atlassian-connect.json"
+    "config": "https://96d4b9c5.ngrok.io/atlassian-connect.json"
   },
   "authentication": {
     "type": "none"
@@ -23,7 +22,7 @@
         "key": "my-addon-page-name",
         "location": "system.top.navigation.bar",
         "name": {
-          "value": "tester"
+          "value": "Testinger"
         },
         "url": "/index",
         "conditions": [
@@ -33,5 +32,6 @@
         ]
       }
     ]
-  }
+  },
+  "baseUrl": "https://96d4b9c5.ngrok.io"
 }
