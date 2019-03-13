@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Project from './Project';
+import EditProject from '../components/EditProject';
 
 class AllProject extends Component {
   render() {
@@ -11,7 +12,7 @@ class AllProject extends Component {
         <h2>Project</h2>
         {this.props.projects.map((project) => (
           <div key={project.id}>
-             <Project project={project} key={project.id} />
+             {project.editing ? <EditProject project={project} key={project.id} /> : <Project project={project} key={project.id} />}
           </div>
         ))}       
       </div>

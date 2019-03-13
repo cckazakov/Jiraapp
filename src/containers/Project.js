@@ -15,7 +15,7 @@ class Project extends Component {
                 <p className="project_message">{this.props.project.style}</p>
                 <p className="project_message">{this.props.project.isPrivate}</p>
                 <div className="control-buttons">
-                    <button className="edit">Edit</button>
+                    <button className="edit" onClick={() => this.props.dispatch({type: 'EDIT_PROJECT', id: this.props.project.id })}>Edit</button>
                     <button claseName="delete">Delete</button>
                 </div>
             </div>
