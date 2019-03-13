@@ -2,9 +2,11 @@
 import { createStore, applyMiddleware } from 'redux';
 import ReduxPromise from 'redux-promise';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import rootReducer from './reducers/reducers';
 
-import postReducer from './reducers/postReducer';
-export default createStore(postReducer, composeWithDevTools(
+export default createStore(
+    rootReducer, 
+    composeWithDevTools(
     applyMiddleware(ReduxPromise),
 ));
 

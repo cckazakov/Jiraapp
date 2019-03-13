@@ -7,7 +7,7 @@
     "url": "www.example.com"
   },
   "links": {
-    "config": "https://7af49062.ngrok.io/atlassian-connect.json"
+    "config": "https://fa55a752.ngrok.io/atlassian-connect.json"
   },
   "authentication": {
     "type": "none"
@@ -33,5 +33,5 @@
       }
     ]
   },
-  "baseUrl": "https://7af49062.ngrok.io"
+  "baseUrl": "https://fa55a752.ngrok.io"
 }

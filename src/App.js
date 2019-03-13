@@ -1,19 +1,29 @@
 import React, { Component } from 'react';
-import PostForm from './components/PostForm';
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import AllProject from './containers/AllProject';
+import AllEpics from './containers/AllEpic';
+import Notfound from './containers/Notfound'
 import AllPost from './components/AllPost';
-import Topbar from './components/Topbar';
-import Category from './components/Category';
-
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Topbar />
-        <Category />
-        <PostForm />
-        <AllPost />
-      </div>
+      <Router>
+        <div>
+          <button>
+              <Link to="/projects">projects</Link>
+          </button>
+          <button>
+              <Link to="/epics">epics</Link>
+          </button>
+          <Switch>
+              <Route exact path='/projects' component={AllProject} />
+              <Route path='/epics' component={AllEpics} />
+              <Route path='/posts' component={AllPost} />
+              <Route component={Notfound} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
