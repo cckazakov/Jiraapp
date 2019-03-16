@@ -19,8 +19,13 @@ const project = (state =  [{"expand":"description,lead,issueTypes,url,projectKey
           if (project.id === action.id) {
             return {
               ...project,
-              title: action.data.newTitle,
-              message: action.data.newMessage,
+              expand: action.data.newExpand,
+              self: action.data.newSelf,
+              key: action.data.newKey,
+              projectTypeKey: action.data.newProjectTypeKey,
+              simplified: action.data.newSimplified,
+              style: action.data.newStyle,
+              isPrivate: action.data.newIsPrivate,
               editing: !project.editing
             }
           } else return project;

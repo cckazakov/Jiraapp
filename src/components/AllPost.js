@@ -16,8 +16,7 @@ class AllPost extends Component {
             {post.editing ? <EditComponent post={post} key={post.id} /> : <Post post={post}
             key={post.id} />}
           </div>
-        ))}
-        
+        ))}        
       </div>
     );
   }

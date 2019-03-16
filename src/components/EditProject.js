@@ -30,17 +30,17 @@ class EditProject extends Component {
         <form className="form" onSubmit={this.handleEdit}>
           <input required type="text" ref={(input) => this.getExpand = input}
           defaultValue={this.props.project.expand} placeholder="Enter project expand" /><br /><br />
-          <textarea required rows="5" ref={(input) => this.getSelf = input}
+          <textarea required rows="2" ref={(input) => this.getSelf = input}
           defaultValue={this.props.project.self} cols="28" placeholder="Enter self" /><br /><br />
-          <textarea required rows="5" ref={(input) => this.getKey = input}
+          <textarea required rows="2" ref={(input) => this.getKey = input}
           defaultValue={this.props.project.key} cols="28" placeholder="Enter key" /><br /><br />
-          <textarea required rows="5" ref={(input) => this.getProjectTypeKey = input}
+          <textarea required rows="2" ref={(input) => this.getProjectTypeKey = input}
           defaultValue={this.props.project.projectTypeKey} cols="28" placeholder="Enter project type" /><br /><br />
-          <textarea required rows="5" ref={(input) => this.getSimplified = input}
+          <textarea required rows="2" ref={(input) => this.getSimplified = input}
           defaultValue={this.props.project.simplified} cols="28" placeholder="Enter Simplified" /><br /><br />
-          <textarea required rows="5" ref={(input) => this.getStyle = input}
+          <textarea required rows="2" ref={(input) => this.getStyle = input}
           defaultValue={this.props.project.style} cols="28" placeholder="Enter project" /><br /><br />
-          <textarea required rows="5" ref={(input) => this.getIsPrivate = input}
+          <textarea required rows="2" ref={(input) => this.getIsPrivate = input}
           defaultValue={this.props.project.isPrivate} cols="28" placeholder="Enter project" /><br /><br />
           <button>Update</button>
         </form>
